@@ -6,7 +6,7 @@ describe("RandomNumber Component", () => {
   test("muestra el número después de hacer clic", () => {
     render(<RandomNumber />);
 
-    const button = screen.getByRole("button", { name: /Generar Número/i });
+    const button = screen.getByRole("button", { name: /Generar Númeroo/i });
     expect(screen.queryByText(/Número generado:/)).not.toBeInTheDocument();
 
     fireEvent.click(button);
