@@ -14,7 +14,7 @@ describe("Survey Component", () => {
   test("al seleccionar un valor, se refleja en el estado", () => {
     render(<Survey />);
 
-    const radio3 = screen.getByLabelText("3 estrellas");
+    const radio3 = screen.getByLabelText("100 estrellas");
     fireEvent.click(radio3);
 
     expect(radio3).toBeChecked();
