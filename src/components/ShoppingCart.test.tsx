@@ -6,7 +6,7 @@ describe("ShoppingCart Component", () => {
   test("el carrito inicia vacío", () => {
     render(<ShoppingCart />);
 
-    expect(screen.getByText("El carito está vacío")).toBeInTheDocument();
+    expect(screen.getByText("El carrito está vacío")).toBeInTheDocument();
     expect(screen.getByText("Total: $0")).toBeInTheDocument();
   });
 
