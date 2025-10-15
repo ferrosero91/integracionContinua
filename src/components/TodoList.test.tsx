@@ -21,7 +21,7 @@ describe("TodoList Component", () => {
     render(<TodoList />);
 
     const input = screen.getByPlaceholderText("Nueva tarea");
-    const addButton = screen.getByText("Agregarr");
+    const addButton = screen.getByText("Agregar");
 
     // Agregar tarea
     fireEvent.change(input, { target: { value: "Estudiar React" } });
